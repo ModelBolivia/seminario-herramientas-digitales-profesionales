@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "gutenify/slider",
+  "category": "gutenify",
+  "title": "Slider",
+  "version": "2",
+  "attributes": {
+    "blockClientId": {
+      "type": "string",
+      "default": ""
+    },
+    "blockAdvanceOptions": {
+      "type": "object",
+      "default": {}
+    },
+    "columns": {
+      "type": "number",
+      "default": 1
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "spaceBetween": {
+      "type": "number",
+      "default": 10
+    },
+    "hasNavigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasPagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "isAutoplay": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "center",
+      "wide",
+      "full"
+    ],
+    "inserter": false
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "style": [
+    "file:./style-index.css",
+    "gutenify-swiper"
+  ],
+  "script": [
+    "gutenify-swiper"
+  ]
+}
